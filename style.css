@@ -1,5 +1,46 @@
+/* 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
+} */
+
+body {
+    color: midnightblue;
+    background-color: beige;
+    padding: 5%;
+  }
+  
+  .question {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .answer {
+    background-color: midnightblue;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  
+  .reveal {
+    background-color: fuchsia;
+    color: beige;
+    font-size: 2rem;
+    transform: rotate(360deg);
+  }
+  
+  .reset {
+    border: 2px solid midnightblue;
+    padding: 0.5rem;
+    margin-top: 1.5rem;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .reset:hover {
+    background-color: midnightblue;
+    color: beige;
+  }
+  

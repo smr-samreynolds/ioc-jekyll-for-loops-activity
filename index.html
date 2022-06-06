@@ -1,5 +1,31 @@
 ---
 layout: default
-title: Homepage
+title: Whale Quiz
+
+quiz:
+- number: 1)
+  question: What is unique about baleen whales?
+  answer: They have baleen which they use to filter plankton from the water.
+- number: 2)
+  question: How many species of toothed whales are there?
+  answer: 76  
+- number: 3)
+  question: What is the largest species of whale?
+  answer: The Blue Whale
+- number: 4)
+  question: The Vaquita is the smallest cetacean species, how long is it?
+  answer: 140-150 cm  
+- number: 5)
+  question: Which whale species has the longest migration?
+  answer: The Humpback Whale. A lone female humpback whale travelled more than 9,800 kilometres from breeding areas in Brazil to those in Madagascar.     
 ---
-<h1>Welcome to your homepage!</h1>
+<section>
+  <h1>Cetacean Quiz</h1>
+  {% for item in page.quiz %}
+  <p class="question">{{item.number}} {{item.question}}</p>
+  <p class="answer"> {{item.answer}}</p>
+  {% endfor %}
+  <div>
+    <a class="reset">Reset Quiz!</a>
+  </div>
+</section>
